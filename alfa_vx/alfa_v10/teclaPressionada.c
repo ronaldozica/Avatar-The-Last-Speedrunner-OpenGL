@@ -17,7 +17,7 @@ void teclaPressionada(unsigned char key, int x, int y)
 
       	if(pulo == 0)
       	{
-      		pulo = 1;      		
+      		pulo = 1;
       	}
 
       break;

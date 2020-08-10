@@ -10,6 +10,7 @@
 	signed short int flag_aquiles;
 	signed short int cont_frames_aquiles;
 	signed short int pulo;
+	signed short int segura_pulo;
 
 	int posicao_fundo;
 	int altura_aquiles;
@@ -26,5 +27,9 @@
 	short int tipo_arvore[INIMIGOS_FASE_1];
 
 	int contador_inimigos;
+
+	int ja_bateu;
+
+	signed short int parar;
 	
 #endif

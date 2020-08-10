@@ -11,7 +11,7 @@
 	#define AQUILES_X 80
 	#define AQUILES_Y 350
 
-	#define ALTURA_PULO 550
+	#define ALTURA_PULO 600
 	#define INCREMENTO_PULO 18
 
 	#define ALTURA_MINIMA_CANCELA_PULO 400
@@ -22,6 +22,9 @@
 	#define PERIODO 33
 
 	#define VELOCIDADE_AQUILES 2
+	#define DELAY_PULO 1
+	#define DELAY_RECUPERACAO 10
+
 	#define VELOCIDADE_FUNDO 4
 
 	#define DISTANCIA_FASE 1000
@@ -44,14 +47,18 @@
 	#define PEDRA_LARG 100
 	#define PEDRA_ALT 100
 
+	#define LARG_HITBOX 10
+
 	#define VELOCIDADE_INIMIGO 10
 
 	#define X_MIN_INIMIGO 0
 	#define X_MAX_INIMIGO 100
 
-	#define OFFSET_ALTURA 350
+	#define OFFSET_ALTURA 370
 	#define OFFSET_LARGURA 10
 
-	#define DISTANCIA_MINIMA 20
+	#define DISTANCIA_MINIMA 25
+
+	#define ESCALA 150
 
 #endif

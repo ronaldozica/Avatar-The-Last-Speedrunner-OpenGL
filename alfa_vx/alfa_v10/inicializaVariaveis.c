@@ -7,8 +7,8 @@ void inicializaVariaveis()
 {  
     flag_aquiles = 1;
     
-    quadro_aquiles[0] = 0.00;
-    quadro_aquiles[1] = 0.25;
+    quadro_aquiles[0] = 0.000;
+    quadro_aquiles[1] = 0.045;
     quadro_aquiles[2] = 0;
     quadro_aquiles[3] = 1;
 
@@ -29,6 +29,7 @@ void inicializaVariaveis()
     altura_aquiles = AQUILES_Y;
 
     pulo = 0;
+    segura_pulo = 0;
 
     distancia = 0;
 
@@ -45,4 +46,8 @@ void inicializaVariaveis()
     }
 
     contador_inimigos = 0;
+
+    ja_bateu = 0;
+
+    parar = 0;
 }

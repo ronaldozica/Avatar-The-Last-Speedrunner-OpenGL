@@ -2,7 +2,7 @@
 #include "includes.h"
 #include "variaveis.h"
 #include "defines.h"
-
+/*
 void teclaLevantada(unsigned char key, int x, int y)
 {
     switch(key)
@@ -14,12 +14,15 @@ void teclaLevantada(unsigned char key, int x, int y)
       	{
 	      	if(pulo == 1)
 	      	{
-	      		pulo = -1;      		
+	      		pulo = -1;    		
 	      	}
-	    }
+	      }
+
+      printf("levantou\n");
+
+      segura_pulo = 0;
 
       break;
     }
-
-
 }
+*/

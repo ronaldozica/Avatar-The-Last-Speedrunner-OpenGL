@@ -5,15 +5,18 @@
 
 void atualizaCena(int periodo)
 {
-	glutPostRedisplay();
+	if(parar == 0)
+	{
+		glutPostRedisplay();
 
-	atualizaQuadroAquiles();
-	atualizaQuadroFundo();
-	atualizaAlturaAquiles();
-	decideInimigos();
+		atualizaQuadroAquiles();
+		atualizaQuadroFundo();
+		atualizaAlturaAquiles();
+		decideInimigos();
 
-	verificaColisao();
-	verificaFimDaFase();
+		verificaColisao();
+		verificaFimDaFase();
 
-    glutTimerFunc(periodo, atualizaCena, periodo);
+    	glutTimerFunc(periodo, atualizaCena, periodo);
+    }
 }

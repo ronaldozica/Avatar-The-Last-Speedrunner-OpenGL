@@ -5,52 +5,69 @@
 
 void verificaColisao()
 {
-	int i, altura_real;
+	int i, altura_real, posicao_inimigo;
 
-	altura_real = altura_aquiles - OFFSET_ALTURA;
+	altura_real = altura_aquiles + AQUILES_ALT - OFFSET_ALTURA;
 
 	for(i = 0; i < INIMIGOS_FASE_1; i ++)
 	{
-		if(pos_inimigo[i] - OFFSET_LARGURA == distancia)
-		{
-			//printf("\npos_inimigo[%d] = %d igual a distancia: %ld\n", i, pos_inimigo[i], distancia);
-			//printf("altura aquiles: %d - altura objeto max: %d", altura_aquiles, ARVORE_ALT);
+		posicao_inimigo = pos_inimigo[i];
 
-			switch(tipo_inimigo[i])
+        if(distancia == posicao_inimigo - LARG_HITBOX)
+        {
+	        switch(tipo_inimigo[i])
 			{
 				case 0:
 				case 1:
 				case 2:
-					
+
 					if(altura_real <= ARVORE_ALT)
 					{
-						printf("bateu\n");
-						//exit(0);
+						if(ja_bateu == 0)
+						{	
+							printf("bateu no inimigo %d\n", i);
+							printf("altura: %d - altura do inimigo %d\n", altura_real, ARVORE_ALT);
+							printf("distancia: %ld\n", distancia);
+							parar = 1;
+							ja_bateu = 1;
+						}
 					}
 
-					break;
+				break;
 
 				case 3:
-					
+
 					if(altura_real <= PEDRA_ALT)
 					{
-						printf("bateu\n");
-						//exit(0);
+						if(ja_bateu == 0)
+						{	
+							printf("bateu no inimigo %d\n", i);
+							printf("altura: %d - altura do inimigo %d\n", altura_real, PEDRA_ALT);
+							printf("distancia: %ld\n", distancia);
+							parar = 1;
+							ja_bateu = 1;
+						}
 					}
 
-					break;
+				break;
 
 				case 4:
-					
+
 					if(altura_real <= ARBUSTO_ALT)
 					{
-						printf("bateu\n");
-						//exit(0);
+						if(ja_bateu == 0)
+						{	
+							printf("bateu no inimigo %d\n", i);
+							printf("altura: %d - altura do inimigo %d\n", altura_real, ARBUSTO_ALT);
+							printf("distancia: %ld\n", distancia);
+							parar = 1;
+							ja_bateu = 1;
+						}
 					}
 
-					break;
+				break;
 			}
-		}
+        }
 	}
 }
 
@@ -58,6 +75,6 @@ void verificaFimDaFase()
 {
 	if(distancia >= DISTANCIA_FASE)
 	{
-		exit(0);
+		parar = 1;
 	}
 }

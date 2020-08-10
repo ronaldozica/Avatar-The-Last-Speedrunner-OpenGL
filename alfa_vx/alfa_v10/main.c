@@ -24,10 +24,12 @@ int main(int argc, char** argv)
 
    glutCreateWindow("project aquiles");
 
+   glutIgnoreKeyRepeat(1);
+
    glutDisplayFunc(desenhaMinhaCena);
    glutReshapeFunc(redimensionada);
    glutKeyboardFunc(teclaPressionada);
-   glutKeyboardUpFunc(teclaLevantada);
+//   glutKeyboardUpFunc(teclaLevantada);
 //   glutSpecialFunc(teclaEspPressionada);
    glutTimerFunc(0, atualizaCena, PERIODO);
 
