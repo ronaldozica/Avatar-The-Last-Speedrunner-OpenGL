@@ -12,7 +12,8 @@
 <p> Ao final, se conseguir derrotar Zuko, aparecerá uma tela de vitória e após certo tempo, o jogo se encerrará.</p>
 
 <h2> Para que esse jogo foi feito? </h2> 
-<p> Para que pudesse aprender mais sobre OpenGL e também programação em C. Esse jogo não possui nenhum fim lucrativo.</p>
+<p> Para que pudesse aprender mais sobre OpenGL e também programação em C.</p>
+<p> Esse jogo não possui nenhum fim lucrativo.</p>
   
 <h2>CONTROLES:</h2>
 <p>:star: Barra de espaço: PULO</p>
